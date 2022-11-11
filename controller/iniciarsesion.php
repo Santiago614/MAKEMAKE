@@ -5,7 +5,7 @@ $id = htmlentities($_POST['id']);
 $contrasena = htmlentities($_POST['contrasena']);
 
 $sql = "SELECT * 
-FROM tblusuario 
+FROM tblUsuario 
 WHERE (correo=:id OR documento=:id) AND contrasena=:contrasena";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(":id", $id);

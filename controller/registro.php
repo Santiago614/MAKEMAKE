@@ -17,7 +17,7 @@ if (!$resultadoExistente) {
     $contrasena = htmlentities($_POST['contrasena']);
     $nombres = htmlentities($_POST['nombres']);
     $apellidos = htmlentities($_POST['apellidos']);
-    $sql = "INSERT INTO tblusuario (documento, nombres, apellidos, correo, contrasena) VALUES (:documento, :nombres, :apellidos, :correo, :contrasena)";
+    $sql = "INSERT INTO tblUsuario (documento, nombres, apellidos, correo, contrasena) VALUES (:documento, :nombres, :apellidos, :correo, :contrasena)";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":documento", $documento);
     $stmt->bindValue(":nombres", $nombres);
