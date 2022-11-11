@@ -36,5 +36,5 @@ if (!$resultadoExistente) {
 } else {
     //Impresión correo ingresado, ya existe en BD
     echo "<script>alert('¡El correo y/o número de documento ingresado ya existen! Por favor verifícalos e intenta nuevamente.');</script>";
-    echo "<script> document.location.href='../../../Views/dashboard/principal/registrarAdmin.php';</script>";
+    echo "<script> document.location.href='../registro.php';</script>";
 }
