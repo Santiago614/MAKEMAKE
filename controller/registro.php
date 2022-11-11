@@ -24,8 +24,6 @@ if (!$resultadoExistente) {
     $stmt->bindValue(":apellidos", $apellidos);
     $stmt->bindValue(":correo", $correo);
     $stmt->bindValue(":contrasena", $contrasena);
-    print_r($stmt);
-    //exit();
     $stmt->execute();
     $resultado = $stmt->rowCount();
     //Inicio de sesión
