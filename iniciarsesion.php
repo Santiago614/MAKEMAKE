@@ -18,7 +18,7 @@ require 'includes/header.php';
                             <h1>Iniciar Sesión</h1>
                         </div>
                     </div>
-                    <form action="controller/iniciarsesion.php" method="post" name="login">
+                    <form action="controller/iniciarSesion.php" method="post" name="login">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Correo o Documento</label>
                             <input type="text" name="id" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo o documento" required>
@@ -33,7 +33,7 @@ require 'includes/header.php';
                         </div>
 
                         <div class="form-group">
-                            <p class="text-center">No tienes cuenta? <a href="registro.php" id="signup">Registrate aquí</a></p>
+                            <p class="text-center"><a href="registro.php" id="signup">¿No tienes cuenta?</a></p>
                         </div>
                     </form>
 

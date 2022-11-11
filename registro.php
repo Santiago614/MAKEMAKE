@@ -2,9 +2,8 @@
 require 'includes/header.php';
 ?>
 
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
 
 <link rel="stylesheet" href="css/iniciarsesion.css">
 <!-- <script src="js/iniciarsesion.js"></script> -->
@@ -13,39 +12,43 @@ require 'includes/header.php';
     <div class="row">
         <div class="col-md-5 mx-auto">
             <div id="second">
-                <div class="myform form ">
+                <div class="myform form">
                     <div class="logo mb-3">
                         <div class="col-md-12 text-center">
-                            <h1>Signup</h1>
+                            <h1>Registro</h1>
                         </div>
                     </div>
-                    <form action="#" name="registration">
+                    <form action="controller/registro.php" method="POST" name="registration">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">First Name</label>
-                            <input type="text" name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                            <label for="nombres">Nombres</label>
+                            <input type="text" name="nombres" class="form-control" id="nombres" placeholder="Ingresa tu nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Last Name</label>
-                            <input type="text" name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="Ingresa tu apellido" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="documento">Documento</label>
+                            <input type="number" name="documento" class="form-control" id="documento" placeholder="Ingresa tu número de documento" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" name="correo" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" name="contrasena" id="contrasena" class="form-control" placeholder="Ingresa tu contraseña" required>
                         </div>
                         <div class="col-md-12 text-center mb-3">
-                            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+                            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Regístrate</button>
                         </div>
                         <div class="col-md-12 ">
                             <div class="form-group">
-                                <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                                <p class="text-center"><a href="./iniciarSesion.php" id="signin">¿Tienes cuenta?</a></p>
                             </div>
                         </div>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
 
