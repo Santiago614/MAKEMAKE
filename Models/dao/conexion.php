@@ -3,11 +3,11 @@
 //Configurar zona horaria de Colombia
 date_default_timezone_set('America/Bogota');
 
-$nombrehost = "190.90.160.12";
-$nombreBD = "interori_makemake";
+$nombrehost = "localhost";
+$nombreBD = "bd_mastergym";
 $host = "mysql:host=$nombrehost;dbname=$nombreBD";
-$usuario = "interori_interori";
-$contrasena = "DB)(sFvTcbYv";
+$usuario = "root";
+$contrasena = "";
 
 try {
     //Conexion exitosa	

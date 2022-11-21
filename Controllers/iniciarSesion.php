@@ -1,6 +1,6 @@
 <?php
 
-require '../dao/conexion.php';
+require '../Models\dao/conexion.php';
 $id = htmlentities($_POST['id']);
 $contrasena = htmlentities($_POST['contrasena']);
 
@@ -18,9 +18,9 @@ if ($resultado) {
     $documento = $documentoUsuario->documento;
     //Inicio de sesión
     session_start();
-    $_SESSION["documentoIdentidad"] = $documento;
-    echo "<script>document.location.href='../dashboard/dist/index.php';</script>";
+    $_SESSION["documento"] = $documento;
+    echo "<script>document.location.href='../Views/dashboard/dist/index.php';</script>";
 } else {
     echo "<script>alert('Credenciales incorrectas, intenta nuevamente');</script>";
-    echo "<script>document.location.href='../iniciarSesion.php';</script>";
+    echo "<script>document.location.href='../Views/navegacion/index.php';</script>";
 }

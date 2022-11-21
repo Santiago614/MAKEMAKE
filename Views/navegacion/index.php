@@ -37,28 +37,19 @@
                     <nav class="navbar bg-light">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a>
+                                <a class="nav-link" href="../index.php"><i class="fa fa-home"></i>Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+                                <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Lo Mas Comprado</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a>
+                                <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>Equipo Pesado</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion & Beauty</a>
+                                <a class="nav-link" href="#"><i class="fa fa-female"></i>Equipo De Cardio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
+                                <a class="nav-link" href="#"><i class="fa fa-child"></i>Suplementos</a>
                             </li>
                         </ul>
                     </nav>
@@ -68,22 +59,22 @@
                         <div class="header-slider-item">
                             <img src="../assets/img/slider-1.jpg" alt="Slider Image" />
                             <div class="header-slider-caption">
-                                <p>Some text goes here that describes the image</p>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                <p>¿Aun no tienes cuenta? Registrate ahora </p>
+                                <a class="btn" href="registro.php"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
                             </div>
                         </div>
                         <div class="header-slider-item">
                             <img src="../assets/img/slider-2.jpg" alt="Slider Image" />
                             <div class="header-slider-caption">
-                                <p>Some text goes here that describes the image</p>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                <p>Aqui encontraras lo que necesitas segun tus necesidades</p>
+                                <a class="btn" href="productLista.php"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
                             </div>
                         </div>
                         <div class="header-slider-item">
                             <img src="../assets/img/slider-3.jpg" alt="Slider Image" />
                             <div class="header-slider-caption">
-                                <p>Some text goes here that describes the image</p>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                <p>Si tienes alguna queja o sugerencia, contactenos</p>
+                                <a class="btn" href="contactenos.php"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
                             </div>
                         </div>
                     </div>
@@ -559,7 +550,7 @@
     </div>
     <!-- Recent Product End -->
 
-    
+
     <!-- Review Start -->
     <div class="review">
         <div class="container-fluid">

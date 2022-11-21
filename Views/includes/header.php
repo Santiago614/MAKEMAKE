@@ -4,11 +4,11 @@
         <div class="row">
             <div class="col-sm-6">
                 <i class="fa fa-envelope"></i>
-                support@email.com
+                mastergym55@gmail.com
             </div>
             <div class="col-sm-6">
                 <i class="fa fa-phone-alt"></i>
-                +012-345-6789
+                +57 313 554 5365
             </div>
         </div>
     </div>
@@ -26,27 +26,26 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="product-list.php" class="nav-item nav-link">Products</a>
-                    <a href="product-detail.php" class="nav-item nav-link">Product Detail</a>
-                    <a href="cart.php" class="nav-item nav-link">Cart</a>
-                    <a href="checkout.php" class="nav-item nav-link">Checkout</a>
-                    <a href="my-account.php" class="nav-item nav-link">My Account</a>
+                    <a href="index.php" class="nav-item nav-link active">Inicio</a>
+                    <a href="productLista.php" class="nav-item nav-link">Productos</a>
+                    <a href="productDetalle.php" class="nav-item nav-link">Detalles Del Producto</a>
+                    <a href="carrito.php" class="nav-item nav-link">Carrito</a>
+                    <a href="verificarCompra.php" class="nav-item nav-link">Verificar Compra</a>
+                    <a href="miCuenta.php" class="nav-item nav-link">Mi Cuenta</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mas Paginas</a>
                         <div class="dropdown-menu">
-                            <a href="wishlist.php" class="dropdown-item">Wishlist</a>
-                            <a href="login.php" class="dropdown-item">Login & Register</a>
-                            <a href="contact.php" class="dropdown-item">Contact Us</a>
+                            <a href="listaCompra.php" class="dropdown-item">Lista De Compra</a>
+                            <a href="contactenos.php" class="dropdown-item">Contactenos</a>
                         </div>
                     </div>
                 </div>
                 <div class="navbar-nav ml-auto">
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta De Usuario</a>
                         <div class="dropdown-menu">
-                            <a href="login.php" class="dropdown-item">Login</a>
-                            <a href="login.php" class="dropdown-item">Register</a>
+                            <a href="iniciarSesion.php" class="dropdown-item">Iniciar Sesion</a>
+                            <a href="registro.php" class="dropdown-item">Registrarse</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +68,7 @@
             </div>
             <div class="col-md-6">
                 <div class="search">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Buscar">
                     <button><i class="fa fa-search"></i></button>
                 </div>
             </div>
