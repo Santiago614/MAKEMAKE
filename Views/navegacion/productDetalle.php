@@ -33,9 +33,9 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="#">Productos</a></li>
-                <li class="breadcrumb-item active">Product Detail</li>
+                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productLista.php">Productos</a></li>
+                <li class="breadcrumb-item active">Detalle Producto</li>
             </ul>
         </div>
     </div>

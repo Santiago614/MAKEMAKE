@@ -33,9 +33,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="Views/navegacion/index.php" class="nav-item nav-link active">Inicio</a>
-                    <a href="Views/navegacion/login.php" class="nav-item nav-link">Iniciar Sesión</a>
-                    <a href="Views/navegacion/login.php" class="nav-item nav-link">Registro</a>
+                    <a href="Views/navegacion/index.php" class="nav-item nav-link">Inicio</a>
+                    <a href="Views/navegacion/iniciarSesion.php" class="nav-item nav-link">Iniciar Sesión</a>
+                    <a href="Views/navegacion/registro.php" class="nav-item nav-link">Registro</a>
                 </div>
             </div>
     </div>
@@ -78,15 +78,11 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="Views/lib/easing/easing.min.js"></script>
+    <script src="Views/lib/waypoints/waypoints.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../assets/js/main.js"></script>
+    <script src="Views/assets/js/main.js"></script>
 </body>
 
 </html>

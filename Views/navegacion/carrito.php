@@ -33,9 +33,9 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="#">Productos</a></li>
-                <li class="breadcrumb-item active">Cart</li>
+                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productDetalle.php">Productos</a></li>
+                <li class="breadcrumb-item active">Carrito</li>
             </ul>
         </div>
     </div>
@@ -51,11 +51,11 @@
                             <table class="table table-bordered">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th>Product</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
                                         <th>Total</th>
-                                        <th>Remove</th>
+                                        <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody class="align-middle">
@@ -69,81 +69,9 @@
                                         <td>$99</td>
                                         <td>
                                             <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="../assets/img/product-2.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="../assets/img/product-3.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="../assets/img/product-4.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="../assets/img/product-5.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
+                                                <button class="btn-minus" id="sumar"><i class="fa fa-minus"></i></button>
+                                                <input type="text" value="1" min="1">
+                                                <button class="btn-plus" id="restar"><i class="fa fa-plus"></i></button>
                                             </div>
                                         </td>
                                         <td>$99</td>

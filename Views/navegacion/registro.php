@@ -33,8 +33,8 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="#">Productos</a></li>
+                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productLista.php">Productos</a></li>
                 <li class="breadcrumb-item active">Login & Register</li>
             </ul>
         </div>
@@ -51,31 +51,31 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>Documento</label>
-                                    <input class="form-control" type="text" name="documento" placeholder="Numero De Documento">
+                                    <input class="form-control" type="number" name="documento" placeholder="Numero De Documento" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Nombre</label>
-                                    <input class="form-control" type="text" name="nombres" placeholder="Nombre">
+                                    <input class="form-control" type="text" name="nombres" placeholder="Nombre" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Apellido</label>
-                                    <input class="form-control" type="text" name="apellidos" placeholder="Apellido">
+                                    <input class="form-control" type="text" name="apellidos" placeholder="Apellido" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Correo Electronico</label>
-                                    <input class="form-control" type="email" name="correo" placeholder="Correo Electronico">
+                                    <input class="form-control" type="email" name="correo" placeholder="Correo Electronico" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Numero De Telefono</label>
-                                    <input class="form-control" type="text" name="celular" placeholder="Numero De Telefono">
+                                    <input class="form-control" type="number" name="celular" placeholder="Numero De Telefono" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Contraseña</label>
-                                    <input class="form-control" type="password" name="contrasena" placeholder="Contraseña">
+                                    <input class="form-control" type="password" name="contrasena" placeholder="Contraseña" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Verificar Contraseña</label>
-                                    <input class="form-control" type="password" name="repcontrasena" placeholder="Verificar Contraseña">
+                                    <input class="form-control" type="password" name="repcontrasena" placeholder="Verificar Contraseña" required>
                                 </div>
                                 <div class="col-md-12">
                                     <button class="btn">Enviar</button>
