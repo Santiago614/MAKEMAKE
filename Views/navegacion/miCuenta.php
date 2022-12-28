@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="eCommerce HTML Template Free Download" name="keywords">
     <meta content="eCommerce HTML Template Free Download" name="description">
@@ -33,8 +33,8 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="productLista.php">Productos</a></li>
+                <li class="breadcrumb-item"><a href="index">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productLista">Productos</a></li>
                 <li class="breadcrumb-item active">My Account</li>
             </ul>
         </div>
@@ -52,7 +52,7 @@
                         <a class="nav-link" id="payment-nav" data-toggle="pill" href="#payment-tab" role="tab"><i class="fa fa-credit-card"></i>Payment Method</a>
                         <a class="nav-link" id="address-nav" data-toggle="pill" href="#address-tab" role="tab"><i class="fa fa-map-marker-alt"></i>address</a>
                         <a class="nav-link" id="account-nav" data-toggle="pill" href="#account-tab" role="tab"><i class="fa fa-user"></i>Account Details</a>
-                        <a class="nav-link" href="index.html"><i class="fa fa-sign-out-alt"></i>Logout</a>
+                        <a class="nav-link" href="index"><i class="fa fa-sign-out-alt"></i>Logout</a>
                     </div>
                 </div>
                 <div class="col-md-9">

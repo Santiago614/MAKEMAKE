@@ -22,7 +22,7 @@
                             <div class="text-center mt-4">
                                 <img class="mb-4 img-error" src="assets/img/error-404-monochrome.svg" />
                                 <p class="lead">La sesión no existe, verifica e intenta nuevamente.</p>
-                                <a href="../../index.php">
+                                <a href="../../index">
                                     <i class="fas fa-arrow-left me-1"></i>
                                     Retornar al inicio
                                 </a>

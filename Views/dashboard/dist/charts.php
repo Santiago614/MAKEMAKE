@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['documento'])) {
-    echo "<script> document.location.href='404.php';</script>";
+    echo "<script> document.location.href='404';</script>";
 } else {
 ?>
 
@@ -28,7 +28,7 @@ if (!isset($_SESSION['documento'])) {
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Charts</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="index">Dashboard</a></li>
                             <li class="breadcrumb-item active">Charts</li>
                         </ol>
                         <div class="card mb-4">

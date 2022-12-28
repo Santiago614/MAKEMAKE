@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="eCommerce HTML Template Free Download" name="keywords">
     <meta content="eCommerce HTML Template Free Download" name="description">
@@ -33,8 +33,8 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="productLista.php">Productos</a></li>
+                <li class="breadcrumb-item"><a href="index">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productLista">Productos</a></li>
                 <li class="breadcrumb-item active">Wishlist</li>
             </ul>
         </div>

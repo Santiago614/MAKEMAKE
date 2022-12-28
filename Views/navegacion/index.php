@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="eCommerce HTML Template Free Download" name="keywords">
     <meta content="eCommerce HTML Template Free Download" name="description">
@@ -37,7 +37,7 @@
                     <nav class="navbar bg-light">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.php"><i class="fa fa-home"></i>Inicio</a>
+                                <a class="nav-link" href="../index"><i class="fa fa-home"></i>Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Lo Mas Comprado</a>
@@ -60,21 +60,21 @@
                             <img src="../assets/img/slider-1.jpg" alt="Slider Image" />
                             <div class="header-slider-caption">
                                 <p>¿Aun no tienes cuenta? Registrate ahora </p>
-                                <a class="btn" href="registro.php"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
+                                <a class="btn" href="registro"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
                             </div>
                         </div>
                         <div class="header-slider-item">
                             <img src="../assets/img/slider-2.jpg" alt="Slider Image" />
                             <div class="header-slider-caption">
                                 <p>Aqui encontraras lo que necesitas segun tus necesidades</p>
-                                <a class="btn" href="productLista.php"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
+                                <a class="btn" href="productLista"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
                             </div>
                         </div>
                         <div class="header-slider-item">
                             <img src="../assets/img/slider-3.jpg" alt="Slider Image" />
                             <div class="header-slider-caption">
                                 <p>Si tienes alguna queja o sugerencia, contactenos</p>
-                                <a class="btn" href="contactenos.php"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
+                                <a class="btn" href="contactenos"><i class="fa fa-shopping-cart"></i>Ir ahora</a>
                             </div>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-1.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-2.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -304,7 +304,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-3.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -332,7 +332,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-4.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -360,7 +360,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-5.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -418,7 +418,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-6.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -446,7 +446,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-7.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -474,7 +474,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-8.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -502,7 +502,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-9.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">
@@ -530,7 +530,7 @@
                             </div>
                         </div>
                         <div class="product-image">
-                            <a href="product-detail.html">
+                            <a href="product-detail">
                                 <img src="../assets/img/product-10.jpg" alt="Product Image">
                             </a>
                             <div class="product-action">

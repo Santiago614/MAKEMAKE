@@ -2,7 +2,7 @@
 <!-- ponemos la variable de sesión antes de todo -->
 <?php 
   session_start();
-  //include './conexion.php';
+  //include './conexion';
 
   // comprobamos si existe la variable de sesión
   if (isset($_SESSION['carrito'])) {
@@ -91,7 +91,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Carrito de Compras</title>
-	<!-- las rutas siempre pivotea con index.php -->
+	<!-- las rutas siempre pivotea con index -->
 	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- <script type="text/javascript"  src="./js/scripts.js"></script> -->
@@ -101,7 +101,7 @@
 <body>
 	<header>
 		<h1>Carrito de Compras</h1>
-		<a href="./carritodecompras.php" title="ver carrito de compras">
+		<a href="./carritodecompras" title="ver carrito de compras">
 			<img src="./imagenes/carrito.png">
 		</a>
 	</header>

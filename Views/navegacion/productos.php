@@ -1,6 +1,6 @@
 <?php
 require '../includes/header.php';
-require "dao/conexion.php";
+require "dao/conexion";
 $sql = "SELECT * FROM tblProducto";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
@@ -34,7 +34,7 @@ $resultado = $stmt->fetchAll();
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.php">Ver producto</a></div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto">Ver producto</a></div>
                             <br>
                             <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
                         </div>

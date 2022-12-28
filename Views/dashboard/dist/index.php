@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['documento'])) {
-    echo "<script> document.location.href='404.php';</script>";
+    echo "<script> document.location.href='404';</script>";
 } else {
 ?>
     <!DOCTYPE html>
@@ -13,7 +13,7 @@ if (!isset($_SESSION['documento'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Proyecto Sena</title>
+        <title>Master GYM | Proyecto SENA</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>

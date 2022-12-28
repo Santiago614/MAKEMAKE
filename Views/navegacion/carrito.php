@@ -1,9 +1,26 @@
+<?php
+
+require "../../Models/dao/conexion";
+$documento = 123456;
+
+$sql = "SELECT PR.nombre, PR.descripcion, PR.precio, CA.cantidad,PR.imagen, (CA.cantidad * PR.precio) AS Total 
+FROM tblusuario AS US INNER JOIN tblcarrito AS CA ON US.documento=CA.documentoUsuario 
+INNER JOIN tblproducto AS PR ON PR.usuario=US.documento 
+WHERE CA.documentoUsuario=:documento";
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(":documento", $documento);
+$stmt->execute();
+
+$result = $stmt->fetchAll();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="eCommerce HTML Template Free Download" name="keywords">
     <meta content="eCommerce HTML Template Free Download" name="description">
@@ -33,8 +50,8 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="productDetalle.php">Productos</a></li>
+                <li class="breadcrumb-item"><a href="index">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productDetalle">Productos</a></li>
                 <li class="breadcrumb-item active">Carrito</li>
             </ul>
         </div>
@@ -59,24 +76,27 @@
                                     </tr>
                                 </thead>
                                 <tbody class="align-middle">
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="../assets/img/product-1.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus" id="sumar"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1" min="1">
-                                                <button class="btn-plus" id="restar"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
+                                    <?php foreach ($result as $data) { ?>
+
+                                        <tr>
+                                            <td>
+                                                <div class="img">
+                                                    <a href="#"><img src="../assets/img/product-1.jpg" alt="Image"></a>
+                                                    <p><?= $data['nombre']?></p>
+                                                </div>
+                                            </td>
+                                            <td><?= number_format($data['precio'], 0, '', '.'); ?></td>
+                                            <td>
+                                                <div class="qty">
+                                                    <button class="btn-minus" id="sumar"><i class="fa fa-minus"></i></button>
+                                                    <input type="text" value="<?= $data['cantidad']?>" min="1">
+                                                    <button class="btn-plus" id="restar"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </td>
+                                            <td>$<?= number_format($data['Total'], 0, '', '.'); ?></td>
+                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                        </tr>
+                                    <?php } ?>
                                 </tbody>
                             </table>
                         </div>
@@ -87,17 +107,17 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="coupon">
-                                    <input type="text" placeholder="Coupon Code">
-                                    <button>Apply Code</button>
+                                    <!-- <input type="text" placeholder="Coupon Code">
+                                    <button>Apply Code</button> -->
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="cart-summary">
                                     <div class="cart-content">
-                                        <h1>Cart Summary</h1>
+                                        <h1>Total Carrito</h1>
                                         <p>Sub Total<span>$99</span></p>
-                                        <p>Shipping Cost<span>$1</span></p>
-                                        <h2>Grand Total<span>$100</span></h2>
+                                        <p>IVA<span>$1</span></p>
+                                        <h2>Total a pagar<span>$100</span></h2>
                                     </div>
                                     <div class="cart-btn">
                                         <button>Update Cart</button>

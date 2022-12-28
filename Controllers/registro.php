@@ -1,6 +1,6 @@
 <?php
 
-require '../Models\dao/conexion.php';
+require '../Models\dao/conexion';
 $documento = htmlentities($_POST['documento']);
 $correo = htmlentities($_POST['correo']);
 $sqlExistente = "SELECT *
@@ -30,10 +30,10 @@ if (!$resultadoExistente) {
     //Inicio de sesión
     session_start();
     $_SESSION["documento"] = $documento;
-    echo "<script>document.location.href='../Views/dashboard/dist/index.php';</script>";
+    echo "<script>document.location.href='../Views/dashboard/dist/index';</script>";
     echo "<script>alert('Cuenta creada correctamente');</script>";
 } else {
     //Impresión correo ingresado, ya existe en BD
     echo "<script>alert('¡El número de documento ingresado ya existe! Por favor verifícalos e intenta nuevamente.');</script>";
-    echo "<script> document.location.href='../Views/navegacion/registro.php';</script>";
+    echo "<script> document.location.href='../Views/navegacion/registro';</script>";
 }

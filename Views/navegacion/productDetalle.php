@@ -1,9 +1,22 @@
+<?php
+
+require "../../Models/dao/conexion";
+$id = 1;
+
+$sql = "SELECT * FROM tblproducto WHERE id=:id";
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(":id", $id);
+$stmt->execute();
+
+$result = $stmt->fetch(PDO::FETCH_OBJ);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="eCommerce HTML Template Free Download" name="keywords">
     <meta content="eCommerce HTML Template Free Download" name="description">
@@ -33,8 +46,8 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="productLista.php">Productos</a></li>
+                <li class="breadcrumb-item"><a href="index">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="productLista">Productos</a></li>
                 <li class="breadcrumb-item active">Detalle Producto</li>
             </ul>
         </div>
@@ -69,7 +82,7 @@
                             <div class="col-md-7">
                                 <div class="product-content">
                                     <div class="title">
-                                        <h2>Product Name</h2>
+                                        <h2><?= $result->nombre; ?></h2>
                                     </div>
                                     <div class="ratting">
                                         <i class="fa fa-star"></i>
@@ -79,11 +92,11 @@
                                         <i class="fa fa-star"></i>
                                     </div>
                                     <div class="price">
-                                        <h4>Price:</h4>
-                                        <p>$99 <span>$149</span></p>
+                                        <h4>Precio:</h4>
+                                        <p>$<?= $result->precio; ?> <span>$149</span></p>
                                     </div>
                                     <div class="quantity">
-                                        <h4>Quantity:</h4>
+                                        <h4>Cantidad:</h4>
                                         <div class="qty">
                                             <button class="btn-minus"><i class="fa fa-minus"></i></button>
                                             <input type="text" value="1">
@@ -91,7 +104,7 @@
                                         </div>
                                     </div>
                                     <div class="p-size">
-                                        <h4>Size:</h4>
+                                        <h4>Tamaño:</h4>
                                         <div class="btn-group btn-group-sm">
                                             <button type="button" class="btn">S</button>
                                             <button type="button" class="btn">M</button>
@@ -108,8 +121,8 @@
                                         </div>
                                     </div>
                                     <div class="action">
-                                        <a class="btn" href="#"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
-                                        <a class="btn" href="#"><i class="fa fa-shopping-bag"></i>Buy Now</a>
+                                        <a class="btn" href="#"><i class="fa fa-shopping-cart"></i>Añadir al carrito</a>
+                                        <a class="btn" href="#"><i class="fa fa-shopping-bag"></i>Comprar ahora</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,10 +165,6 @@
                                         <div class="reviewer">Phasellus Gravida - <span>01 Jan 2020</span></div>
                                         <div class="ratting">
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
                                         </div>
                                         <p>
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
@@ -164,7 +173,7 @@
                                     <div class="reviews-submit">
                                         <h4>Give your Review:</h4>
                                         <div class="ratting">
-                                            <i class="far fa-star"></i>
+                                            <i class="fa fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
                                             <i class="far fa-star"></i>
@@ -209,7 +218,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="product-detail">
                                             <img src="../assets/img/product-10.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -237,7 +246,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="product-detail">
                                             <img src="../assets/img/product-8.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -265,7 +274,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="product-detail">
                                             <img src="../assets/img/product-6.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -293,7 +302,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="product-detail">
                                             <img src="../assets/img/product-4.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -321,7 +330,7 @@
                                         </div>
                                     </div>
                                     <div class="product-image">
-                                        <a href="product-detail.html">
+                                        <a href="product-detail">
                                             <img src="../assets/img/product-2.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
@@ -379,7 +388,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-7.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -405,7 +414,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-8.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -431,7 +440,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-9.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">

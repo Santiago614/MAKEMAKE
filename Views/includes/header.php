@@ -26,17 +26,17 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
-                    <a href="index.php" class="nav-item nav-link active">Inicio</a>
-                    <a href="productLista.php" class="nav-item nav-link">Productos</a>
-                    <a href="productDetalle.php" class="nav-item nav-link">Detalles Del Producto</a>
-                    <a href="carrito.php" class="nav-item nav-link">Carrito</a>
-                    <a href="verificarCompra.php" class="nav-item nav-link">Verificar Compra</a>
-                    <a href="miCuenta.php" class="nav-item nav-link">Mi Cuenta</a>
+                    <a href="index" class="nav-item nav-link active">Inicio</a>
+                    <a href="productLista" class="nav-item nav-link">Productos</a>
+                    <a href="productDetalle" class="nav-item nav-link">Detalles Del Producto</a>
+                    <a href="carrito" class="nav-item nav-link">Carrito</a>
+                    <a href="verificarCompra" class="nav-item nav-link">Verificar Compra</a>
+                    <a href="miCuenta" class="nav-item nav-link">Mi Cuenta</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Más Paginas</a>
                         <div class="dropdown-menu">
-                            <a href="listaCompra.php" class="dropdown-item">Lista De Compra</a>
-                            <a href="contactenos.php" class="dropdown-item">Contáctenos</a>
+                            <a href="listaCompra" class="dropdown-item">Lista De Compra</a>
+                            <a href="contactenos" class="dropdown-item">Contáctenos</a>
                         </div>
                     </div>
                 </div>
@@ -44,8 +44,8 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta De Usuario</a>
                         <div class="dropdown-menu">
-                            <a href="iniciarSesion.php" class="dropdown-item">Iniciar Sesión</a>
-                            <a href="registro.php" class="dropdown-item">Registrarse</a>
+                            <a href="iniciarSesion" class="dropdown-item">Iniciar Sesión</a>
+                            <a href="registro" class="dropdown-item">Registrarse</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
         <div class="row align-items-center">
             <div class="col-md-3">
                 <div class="logo">
-                    <a href="index.php">
+                    <a href="index">
                         <img src="../assets/img/logo.png" alt="Logo">
                     </a>
                 </div>
@@ -74,11 +74,11 @@
             </div>
             <div class="col-md-3">
                 <div class="user">
-                    <a href="productLista.php" class="btn wishlist">
+                    <a href="productLista" class="btn wishlist">
                         <i class="fa fa-heart"></i>
                         <span>(0)</span>
                     </a>
-                    <a href="carrito.php" class="btn cart">
+                    <a href="carrito" class="btn cart">
                         <i class="fa fa-shopping-cart"></i>
                         <span>(0)</span>
                     </a>

@@ -2,4 +2,4 @@
 
 session_start();
 session_destroy();
-echo "<script> document.location.href='../Views/navegacion/index.php';</script>";
+echo "<script> document.location.href='../Views/navegacion/index';</script>";

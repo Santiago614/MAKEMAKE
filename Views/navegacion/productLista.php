@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="eCommerce HTML Template Free Download" name="keywords">
     <meta content="eCommerce HTML Template Free Download" name="description">
@@ -33,7 +33,7 @@
     <div class="breadcrumb-wrap">
         <div class="container-fluid">
             <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="index">Inicio</a></li>
                 <li class="breadcrumb-item active">Productos</li>
             </ul>
         </div>
@@ -103,7 +103,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-1.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -131,7 +131,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-2.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -159,7 +159,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-3.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -187,7 +187,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-4.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -215,7 +215,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-5.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -243,7 +243,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-6.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-7.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -299,7 +299,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-8.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -327,7 +327,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-9.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -402,7 +402,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-10.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -428,7 +428,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-9.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">
@@ -454,7 +454,7 @@
                                     </div>
                                 </div>
                                 <div class="product-image">
-                                    <a href="product-detail.html">
+                                    <a href="product-detail">
                                         <img src="../assets/img/product-8.jpg" alt="Product Image">
                                     </a>
                                     <div class="product-action">

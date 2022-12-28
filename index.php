@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Proyecto SENA</title>
+    <title>Master GYM | Proyecto SENA</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -25,7 +25,7 @@
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="Views/navegacion/index.php" class="navbar-brand">
+            <a href="Views/navegacion/index" class="navbar-brand">
                 <h1 class="m-0 display-4 font-weight-bold text-uppercase text-white">Gymnast</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -33,9 +33,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    <a href="Views/navegacion/index.php" class="nav-item nav-link">Inicio</a>
-                    <a href="Views/navegacion/iniciarSesion.php" class="nav-item nav-link">Iniciar Sesión</a>
-                    <a href="Views/navegacion/registro.php" class="nav-item nav-link">Registro</a>
+                    <a href="Views/navegacion/index" class="nav-item nav-link">Inicio</a>
+                    <a href="Views/navegacion/iniciarSesion" class="nav-item nav-link">Iniciar Sesión</a>
+                    <a href="Views/navegacion/registro" class="nav-item nav-link">Registro</a>
                 </div>
             </div>
     </div>
@@ -52,7 +52,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                         <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Best Gym In Town</h2>
-                        <a href="Views/navegacion/index.php" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Ir Al Inicio</a>
+                        <a href="Views/navegacion/index" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Ir Al Inicio</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -60,7 +60,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                         <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Get Body In Shape</h2>
-                        <a href="Views/navegacion/index.php" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Ir Al Inicio</a>
+                        <a href="Views/navegacion/index" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Ir Al Inicio</a>
                     </div>
                 </div>
             </div>
