@@ -1,3 +1,17 @@
+<?php
+require '../../../Models/dao/conexion.php';
+
+$documento = $_SESSION['documento'];
+$sql = "SELECT * FROM tblusuario WHERE documento = :documento";
+$stmt = $pdo->prepare($sql);
+$stmt->bindValue(':documento', $documento);
+
+$stmt->execute();
+$result = $stmt->fetch(PDO::FETCH_OBJ);
+
+
+?>
+
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
     <!-- Navbar Brand-->
     <a class="navbar-brand ps-3" href="../../navegacion/index">Start Bootstrap</a>
@@ -11,7 +25,7 @@
         </div>
     </form>
     <div class="media-body ml-2 d-none d-lg-block">
-        <span class="mb-0 text-sm font-weight-bold text-light">Pedro Rojasfdgfgdgdgdgdgdgr</span>
+        <span class="mb-0 text-sm font-weight-bold text-light"><?= $result->nombres . ' ' . $result->apellidos ?></span>
     </div>
     <!-- Navbar-->
     <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
@@ -23,7 +37,12 @@
                 <li>
                     <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="../../../Controllers/cerrarSesion">Cerrar Sesion</a></li>
+                <li>
+                    <form action="../../../Controllers/php/users/usuarios" method="post">
+                        <input type="hidden" name="cerrarSesion" />
+                        <button class="dropdown-item" type="submit">Cerrar Sesión</button>
+                    </form>
+                </li>
             </ul>
         </li>
     </ul>

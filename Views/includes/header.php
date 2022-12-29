@@ -12,7 +12,7 @@
             </div>
         </div>
     </div>
-</div>  
+</div>
 <!-- Top bar End -->
 
 <!-- Nav Bar Start -->
@@ -31,7 +31,12 @@
                     <a href="productDetalle" class="nav-item nav-link">Detalles Del Producto</a>
                     <a href="carrito" class="nav-item nav-link">Carrito</a>
                     <a href="verificarCompra" class="nav-item nav-link">Verificar Compra</a>
-                    <a href="miCuenta" class="nav-item nav-link">Mi Cuenta</a>
+                    <?php
+                    session_start();
+                    @$documento = $_SESSION['documento'];
+                    if ($documento) { ?>
+                        <a href="../dashboard/dist/index" class="nav-item nav-link">Volver al Panel</a>
+                    <?php } ?>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Más Paginas</a>
                         <div class="dropdown-menu">
@@ -42,11 +47,15 @@
                 </div>
                 <div class="navbar-nav ml-auto">
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta De Usuario</a>
-                        <div class="dropdown-menu">
-                            <a href="login" class="dropdown-item">Iniciar Sesión</a>
-                            <a href="registro" class="dropdown-item">Registrarse</a>
-                        </div>
+                        <?php
+                        if (!$documento) :
+                        ?>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta De Usuario</a>
+                            <div class="dropdown-menu">
+                                <a href="login" class="dropdown-item">Iniciar Sesión</a>
+                                <a href="registro" class="dropdown-item">Registrarse</a>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

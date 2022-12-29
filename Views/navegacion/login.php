@@ -87,13 +87,13 @@ if (isset($_SESSION['documento'])) {
         </div>
         <!-- Login End -->
 
-        <script src="../assets/js/login.js"></script>
-        <script src="../assets/js/sweetalert2.min.js"></script>
 
         <?php
         require '../includes/footer.php';
         ?>
 
+        <script src="../assets/js/login.js"></script>
+        <script src="../assets/js/sweetalert2.min.js"></script>
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

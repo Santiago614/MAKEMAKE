@@ -1,5 +1,4 @@
 const formlogin = document.getElementById("form-login");
-console.log(formlogin);
 
 // Creando objeto
 let datos = {

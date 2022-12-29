@@ -1,6 +1,6 @@
 <?php
 
-require "../../Models/dao/conexion";
+require "../../Models/dao/conexion.php";
 $id = 1;
 
 $sql = "SELECT * FROM tblproducto WHERE id=:id";
