@@ -25,8 +25,10 @@ if (isset($_SESSION['documento'])) {
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link href="../lib/slick/slick.css" rel="stylesheet">
         <link href="../lib/slick/slick-theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
 
         <!-- Template Stylesheet -->
         <link href="../assets/css/style.css" rel="stylesheet">
@@ -60,16 +62,15 @@ if (isset($_SESSION['documento'])) {
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="login-form">
-                                        <form action="../../Controllers/php/users/acceso" method="post">
-                                        <input type="hidden" name="iniciarSesion">
+                                        <form id="form-login" method="post">
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Correo / Documento Usuario</label>
-                                                    <input class="form-control" type="text" name="id" placeholder="Correo / Documento Usuario" required>
+                                                    <input class="form-control" type="text" name="id" id="id" placeholder="Correo / Documento Usuario" required>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label>Contraseña</label>
-                                                    <input class="form-control" type="password" name="contrasena" placeholder="Contraseña" required>
+                                                    <input class="form-control" type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <button class="btn">Iniciar Sesion</button>
@@ -86,7 +87,8 @@ if (isset($_SESSION['documento'])) {
         </div>
         <!-- Login End -->
 
-
+        <script src="../assets/js/login.js"></script>
+        <script src="../assets/js/sweetalert2.min.js"></script>
 
         <?php
         require '../includes/footer.php';

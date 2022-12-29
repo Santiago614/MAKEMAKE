@@ -1,16 +1,17 @@
 <?php
 
-if (isset($_POST['iniciarSesion'])) {
-    if (isset($_POST['iniciarSesion'])) {
+if (isset($_POST['login'])) {
+    if (isset($_POST['login'])) {
+        $datos = json_decode($_POST['login']);
         //Captura de información
-        $idUsuario = $_POST['id'];
-        $contrasena = $_POST['contrasena'];
+        $idUsuario = $datos->id;
+        $contrasena = $datos->contrasena;
         /* Instanciar la clase */
         $iniciar = new InicioSesion();
         /* Asignación de los parametros a la función */
         $iniciar->iniciarSesion($idUsuario, $contrasena);
     }
-}else {
+} else {
     echo "Error";
 }
 
@@ -18,8 +19,8 @@ class InicioSesion
 {
     public function IniciarSesion($idUsuario, $clave)
     {
-        require "../../../Models/dao/conexion";
-        //Capturo información
+        require "../../../Models/dao/conexion.php";
+        //Capturar información
         //strip_tags->Función que ayuda a evitar la inyección sql
         $id = htmlentities($idUsuario);
         $contrasena = htmlentities($clave);
@@ -44,20 +45,9 @@ class InicioSesion
             session_start();
             //Asignación variable de sesión
             $_SESSION["documento"] = $documento;
-
-            // Redirección basado en el rol
-            if ($dataUsuario->rol == 1) {
-                //Comprador/Proveedor
-                echo "<script> document.location.href='../../../Views/dashboard/dist/index';</script>";
-            } else {
-                //Admin
-                echo "<script> document.location.href='../../../Views/dashboard/dist/index';</script>";
-            }
-        } else if () {
-            # code...
-        }else {
-            echo "<script>alert('Correo o documento y/o contraseña incorrecto, o validación denegada');</script>";
-            echo "<script> document.location.href='../../../Views/navegacion/iniciarSesion';</script>";
+            echo 1;
+        } else {
+            echo 2;
         }
     }
 }

@@ -44,7 +44,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta De Usuario</a>
                         <div class="dropdown-menu">
-                            <a href="iniciarSesion" class="dropdown-item">Iniciar Sesión</a>
+                            <a href="login" class="dropdown-item">Iniciar Sesión</a>
                             <a href="registro" class="dropdown-item">Registrarse</a>
                         </div>
                     </div>

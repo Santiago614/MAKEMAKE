@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
                     <a href="Views/navegacion/index" class="nav-item nav-link">Inicio</a>
-                    <a href="Views/navegacion/iniciarSesion" class="nav-item nav-link">Iniciar Sesión</a>
+                    <a href="Views/navegacion/login" class="nav-item nav-link">Iniciar Sesión</a>
                     <a href="Views/navegacion/registro" class="nav-item nav-link">Registro</a>
                 </div>
             </div>
