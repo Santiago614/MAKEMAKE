@@ -1,18 +1,8 @@
 <?php
 
-require "../../Models/dao/conexion";
-$documento = 123456;
-
-$sql = "SELECT PR.nombre, PR.descripcion, PR.precio, CA.cantidad,PR.imagen, (CA.cantidad * PR.precio) AS Total 
-FROM tblusuario AS US INNER JOIN tblcarrito AS CA ON US.documento=CA.documentoUsuario 
-INNER JOIN tblproducto AS PR ON PR.usuario=US.documento 
-WHERE CA.documentoUsuario=:documento";
-$stmt = $pdo->prepare($sql);
-$stmt->bindValue(":documento", $documento);
-$stmt->execute();
-
-$result = $stmt->fetchAll();
-
+/* require '../../Controllers/php/users/compras.php';
+$carrito = new Carrito();
+$respGetCarrito = $carrito->getCarrito(); */
 
 ?>
 <!DOCTYPE html>
@@ -75,28 +65,8 @@ $result = $stmt->fetchAll();
                                         <th>Eliminar</th>
                                     </tr>
                                 </thead>
-                                <tbody class="align-middle">
-                                    <?php foreach ($result as $data) { ?>
-
-                                        <tr>
-                                            <td>
-                                                <div class="img">
-                                                    <a href="#"><img src="../assets/img/product-1.jpg" alt="Image"></a>
-                                                    <p><?= $data['nombre']?></p>
-                                                </div>
-                                            </td>
-                                            <td><?= number_format($data['precio'], 0, '', '.'); ?></td>
-                                            <td>
-                                                <div class="qty">
-                                                    <button class="btn-minus" id="sumar"><i class="fa fa-minus"></i></button>
-                                                    <input type="text" value="<?= $data['cantidad']?>" min="1">
-                                                    <button class="btn-plus" id="restar"><i class="fa fa-plus"></i></button>
-                                                </div>
-                                            </td>
-                                            <td>$<?= number_format($data['Total'], 0, '', '.'); ?></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
-                                        </tr>
-                                    <?php } ?>
+                                <tbody class="align-middle" id="carrito">
+                                    <!-- Se imprime el contenido desde JS -->
                                 </tbody>
                             </table>
                         </div>
@@ -121,7 +91,7 @@ $result = $stmt->fetchAll();
                                     </div>
                                     <div class="cart-btn">
                                         <button>Update Cart</button>
-                                        <button>Checkout</button>
+                                        <button id="checkout">Checkout</button>
                                     </div>
                                 </div>
                             </div>
@@ -137,14 +107,15 @@ $result = $stmt->fetchAll();
     require '../includes/footer.php';
     ?>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/slick/slick.min.js"></script>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="../lib/easing/easing.min.js"></script>
+<script src="../lib/slick/slick.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="../assets/js/main.js"></script>
+<script src="../assets/js/carrito.js"></script>
+<!-- Template Javascript -->
+<script src="../assets/js/main.js"></script>
 </body>
 
 </html>

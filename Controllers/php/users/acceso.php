@@ -10,8 +10,7 @@ if (isset($_POST['login']) || isset($_POST['registro'])) {
         $iniciar = new InicioSesion();
         /* Asignación de los parametros a la función */
         $iniciar->iniciarSesion($idUsuario, $contrasena);
-    }
-    if (isset($_POST['registro'])) {
+    }else if (isset($_POST['registro'])) {
         $datos = json_decode($_POST['registro']);
         //Capturo información para registro usuario
         $docIdentidad = htmlentities($datos->documento);
@@ -40,27 +39,39 @@ class InicioSesion
         $estado = '1';
         $sql = "SELECT * 
         FROM tblUsuario 
-        WHERE (correo=:id OR documento=:id) AND contrasena=:contrasena AND estado=:estado";
+        WHERE (correo=:id OR documento=:id) AND contrasena=:contrasena";
         $stmt = $pdo->prepare($sql);
         $stmt->bindValue(":id", $id);
         $stmt->bindValue(":contrasena", $contrasena);
-        $stmt->bindValue(":estado", $estado);
         $stmt->execute();
         //Contar registros
         $resultado = $stmt->rowCount();
         if ($resultado) {
-
-            //PDO::FETCH_OBJ->Guarda lo que recibe en un objeto
-            $dataUsuario = $stmt->fetch(PDO::FETCH_OBJ);
-            //Llamado al documento independiente si ingresa correo o documento
-            $documento = $dataUsuario->documento;
-            //Inicio de sesión
-            session_start();
-            //Asignación variable de sesión
-            $_SESSION["documento"] = $documento;
-            echo 1;
+            $sqlEstado = "SELECT * 
+            FROM tblUsuario 
+            WHERE (correo=:id OR documento=:id) AND contrasena=:contrasena AND estado=:estado";
+            $stmt = $pdo->prepare($sqlEstado);
+            $stmt->bindValue(":id", $id);
+            $stmt->bindValue(":contrasena", $contrasena);
+            $stmt->bindValue(":estado", $estado);
+            $stmt->execute();
+            //Contar registros
+            $resultadoEstado = $stmt->rowCount();
+            if ($resultadoEstado) {
+                //PDO::FETCH_OBJ->Guarda lo que recibe en un objeto
+                $dataUsuario = $stmt->fetch(PDO::FETCH_OBJ);
+                //Llamado al documento independiente si ingresa correo o documento
+                $documento = $dataUsuario->documento;
+                //Inicio de sesión
+                session_start();
+                //Asignación variable de sesión
+                $_SESSION["documento"] = $documento;
+                echo 1;
+            } else {
+                echo 2;
+            }
         } else {
-            echo 2;
+            echo 3;
         }
     }
 }

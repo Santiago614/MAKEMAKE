@@ -32,7 +32,6 @@
                     <a href="carrito" class="nav-item nav-link">Carrito</a>
                     <a href="verificarCompra" class="nav-item nav-link">Verificar Compra</a>
                     <?php
-                    session_start();
                     @$documento = $_SESSION['documento'];
                     if ($documento) { ?>
                         <a href="../dashboard/dist/index" class="nav-item nav-link">Volver al Panel</a>

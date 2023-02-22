@@ -14,19 +14,25 @@ formregistro.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // Recogiendo datos ingresados por el usuario
-  let contrasena = document.getElementById("contrasena").value;
-  let repcontrasena = document.getElementById("repcontrasena").value;
-  if (contrasena != repcontrasena) {
-    console.log("Las contrasenas no coinciden");
+  let contrasena = document.getElementById("contrasena");
+  let datoContrasena = contrasena.value;
+  let repcontrasena = document.getElementById("repcontrasena");
+  let datoReContrasena = repcontrasena.value;
+  if (datoContrasena != datoReContrasena) {
     Swal.fire({
       type: "warning",
       html: "<strong>¡Las contraseñas no coinciden!</strong>",
+      confirmButtonText: "Volver",
     });
+    console.log(repcontrasena);
+    datoReContrasena = "";
+    datoReContrasena.focus();
   } else {
     let documento = document.getElementById("documento").value;
     let nombres = document.getElementById("nombres").value;
     let apellidos = document.getElementById("apellidos").value;
     let correo = document.getElementById("correo").value;
+    let contrasena = document.getElementById("contrasena").value;
 
     datos.documento = documento;
     datos.nombre = nombres;

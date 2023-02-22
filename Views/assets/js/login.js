@@ -31,7 +31,12 @@ formlogin.addEventListener("submit", function (e) {
       } else if (resp == 2) {
         Swal.fire({
           type: "warning",
-          html: "<strong>¡Hola! le informamos que su cuenta se encuentra en estado <strong>INACTIVO</strong> si crees que se trate de un error por favor comunícate con nosotros... <a href='soporte'>aquí</a><br><br>¡Muchas gracias!</strong>",
+          html: "<strong>¡Hola! te informamos que su cuenta se encuentra en estado <strong>INACTIVO</strong> si crees que se trate de un error por favor comunícate con nosotros... <a href='soporte'>aquí</a><br><br>¡Muchas gracias!</strong>",
+        });
+      } else if (resp == 3) {
+        Swal.fire({
+          type: "error",
+          html: "<strong>¡Hola! tu cuenta no existe la puedes crear... <a href='registro'>aquí</a><br><br>¡Muchas gracias!</strong>",
         });
       } else {
         Swal.fire({
