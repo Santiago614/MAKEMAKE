@@ -35,6 +35,8 @@ $resultado = $stmt->fetchAll();
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
   <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+  <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
+
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
@@ -266,41 +268,43 @@ $resultado = $stmt->fetchAll();
               </form>
             </div>
           </div> -->
-          <div class="col-sm-12 col-xl-12">
-            <div class="bg-light rounded h-100 p-4">
-              <h6 class="mb-4">Agregar Producto</h6>
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="nombre" placeholder="Escribe aquí el nombre" required />
-                <label for="nombre">Nombre:</label>
+          <div class="col-sm-12 col-xl-12" >
+            <form id="form-crear-producto">
+              <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Agregar Producto</h6>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nombre" placeholder="Escribe aquí el nombre" required />
+                  <label for="nombre">Nombre:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" placeholder="Escribe aquí la descripción" id="descripcion" style="height: 150px" required></textarea>
+                  <label for="descripcion">Descripción:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="cantidad" placeholder="Escribe aquí la cantidad" required />
+                  <label for="cantidad">Cantidad:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="stock" placeholder="Escribe aquí el stock minimo" required />
+                  <label for="stock">Stock Minimo:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="precio" placeholder="Escribe aquí el precio" required />
+                  <label for="precio">Precio:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <select class="form-select" id="categoria" aria-label="Categoría del producto" required>
+                    <option disabled>Selecciona una categoría</option>
+                    <?php foreach ($resultado as $data) {
+                    ?>
+                      <option value="<?= $data['id'] ?>"><?= $data['nombre'] ?></option>
+                    <?php } ?>
+                  </select>
+                  <label for="categoria">Categoría</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Crear Producto</button>
               </div>
-              <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Escribe aquí la descripción" id="descripcion" style="height: 150px" required></textarea>
-                <label for="descripcion">Descripción:</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="cantidad" placeholder="Escribe aquí la cantidad" required />
-                <label for="cantidad">Cantidad:</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="cantidad" placeholder="Escribe aquí el stock minimo" required />
-                <label for="cantidad">Stock Minimo:</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="precio" placeholder="Escribe aquí el precio" required />
-                <label for="precio">Precio:</label>
-              </div>
-              <div class="form-floating mb-3">
-                <select class="form-select" id="floatingSelect" aria-label="Categoría del producto" required>
-                  <option disabled>Selecciona una categoría</option>
-                  <?php foreach ($resultado as $data) {
-                  ?>
-                    <option value="<?= $data['id'] ?>"><?= $data['nombre'] ?></option>
-                  <?php } ?>
-                </select>
-                <label for="floatingSelect">Categoría</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Crear Producto</button>
-            </div>
+            </form>
           </div>
           <!-- <div class="col-sm-12 col-xl-6">
             <div class="bg-light rounded h-100 p-4">
@@ -502,6 +506,8 @@ $resultado = $stmt->fetchAll();
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+  <script src="js/producto.js"></script>
+  <script src="../assets/js/sweetalert2.min.js"></script>
 </body>
 
 </html>
