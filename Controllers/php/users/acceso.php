@@ -91,7 +91,7 @@ class Registro
         $resultadoExistente = $consultaExistente->rowCount();
         if (!$resultadoExistente) { //En caso de que el correo no exista en BD
             $estado = '1';
-            $imagen = "perfil.png";
+            $imagen = "userDefault.png";
             $rol = '2';
             //Consulta correo ingresado no existe en BD
             //sentencia Sql

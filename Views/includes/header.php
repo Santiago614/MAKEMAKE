@@ -32,9 +32,8 @@
                     <a href="carrito" class="nav-item nav-link">Carrito</a>
                     <a href="verificarCompra" class="nav-item nav-link">Verificar Compra</a>
                     <?php
-                    @$documento = $_SESSION['documento'];
-                    if ($documento) { ?>
-                        <a href="../dashboard/dist/index" class="nav-item nav-link">Volver al Panel</a>
+                    if (isset($_SESSION['documento'])) { ?>
+                        <a href="../dashboard/index" class="nav-item nav-link">Volver al Panel</a>
                     <?php } ?>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Más Paginas</a>
@@ -47,7 +46,7 @@
                 <div class="navbar-nav ml-auto">
                     <div class="nav-item dropdown">
                         <?php
-                        if (!$documento) :
+                        if (!isset($_SESSION['documento'])) :
                         ?>
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta De Usuario</a>
                             <div class="dropdown-menu">

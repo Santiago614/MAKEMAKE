@@ -40,13 +40,13 @@ formCrearProducto.addEventListener("submit", (e) => {
       if (resp == 1) {
         Swal.fire({
           type: "success",
-          html: "<strong>¡BIENVENIDO (A)!</strong>",
+          html: "<strong>¡Registro guardado correctamente!</strong>",
         });
-        document.location.href = "../dashboard/dist/index.php";
+        /* document.location.href = "../dashboard/dist/index.php"; */
       } else if (resp == 2) {
         Swal.fire({
           type: "warning",
-          html: "¡El correo y/o número de documento ingresado ya existe! Por favor verifícalos e intenta nuevamente!",
+          html: "¡Ocurrió un error, no se pudo guardar el producto!",
         });
       } else {
         Swal.fire({

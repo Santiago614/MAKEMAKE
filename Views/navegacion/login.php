@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['documento'])) {
-    echo "<script> document.location.href='../dashboard/dist/index';</script>";
+    echo "<script> document.location.href='../dashboard/index';</script>";
 } else {
 ?>
 

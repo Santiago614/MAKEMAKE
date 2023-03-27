@@ -27,7 +27,7 @@ formlogin.addEventListener("submit", function (e) {
           type: "success",
           html: "<strong>¡BIENVENIDO (A)!</strong>",
         });
-        document.location.href = "../dashboard/dist/index.php";
+        document.location.href = "../dashboard/index";
       } else if (resp == 2) {
         Swal.fire({
           type: "warning",
