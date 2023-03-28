@@ -38,7 +38,7 @@ class InicioSesion
         $contrasena = htmlentities($clave);
         $estado = '1';
         $sql = "SELECT * 
-        FROM tblUsuario 
+        FROM tblusuario 
         WHERE (correo=:id OR documento=:id) AND contrasena=:contrasena";
         $stmt = $pdo->prepare($sql);
         $stmt->bindValue(":id", $id);
@@ -48,7 +48,7 @@ class InicioSesion
         $resultado = $stmt->rowCount();
         if ($resultado) {
             $sqlEstado = "SELECT * 
-            FROM tblUsuario 
+            FROM tblusuario 
             WHERE (correo=:id OR documento=:id) AND contrasena=:contrasena AND estado=:estado";
             $stmt = $pdo->prepare($sqlEstado);
             $stmt->bindValue(":id", $id);
