@@ -1,4 +1,4 @@
-<div class="modal fade" id="eliminarPubliModal<?= $data['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="eliminarPubliModal-<?= $data['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <form action="../../../Controllers/php/users/publicaciones" method="post">
             <input type="hidden" name="eliminarPublicacion">
@@ -22,7 +22,7 @@
 </div>
 
 <!-- Modal Actualizar Publicación -->
-<div class="modal fade" id="actualizarPubliModal<?= $data['id'] ?>" role="dialog">
+<div class="modal fade" id="actualizarPubliModal-<?= $data['id'] ?>" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <!-- Modal Header -->

@@ -42,7 +42,13 @@ formCrearProducto.addEventListener("submit", (e) => {
           type: "success",
           html: "<strong>¡Registro guardado correctamente!</strong>",
         });
-        /* document.location.href = "../dashboard/dist/index.php"; */
+        //Dejar campos en blanco cuando se guarde un registro
+        document.getElementById("nombre").value = "";
+        document.getElementById("descripcion").value = "";
+        document.getElementById("cantidad").value = "";
+        document.getElementById("stock").value = "";
+        document.getElementById("precio").value = "";
+        document.getElementById("categoria").value = "";
       } else if (resp == 2) {
         Swal.fire({
           type: "warning",

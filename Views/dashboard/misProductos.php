@@ -294,16 +294,18 @@ if (!isset($_SESSION['documento'])) {
                                                         echo "<td>Inactivo</td>";
                                                     } ?>
                                                     <td>
-                                                        <div class="nav-item dropdown">
-                                                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-sharp fa-regular fa-gear"></i>Acciones</a>
-                                                            <div class="dropdown-menu bg-transparent border-0" aria-labelledby="dropdownMenuButton">
-                                                                <a class="btn btn-info" data-toggle="modal" data-target="#actualizarPubliModal<?= $data['id']; ?>">Actualizar</a>
-                                                                <a class="btn btn-danger" data-toggle="modal" data-target="#eliminarPubliModal<?= $data['id']; ?>">Eliminar</a>
-                                                            </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Acciones
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item btn-info" data-toggle="modal" data-target="#actualizarPubliModal-<?= $data['id']; ?>">Actualizar</a></li>
+                                                                <li><a class="dropdown-item btn-danger" data-toggle="modal" data-target="#eliminarPubliModal-<?= $data['id']; ?>">Eliminar</a></li>
+                                                            </ul>
                                                         </div>
+                                                        <?php require "includes/modalesProducto.php"; ?>
                                                     </td>
                                                     <!--Modal Eliminar publicación -->
-                                                    <?php require "includes/modalesProducto.php"; ?>
                                                 </tr>
                                             <?php } ?>
                                         </tbody>
